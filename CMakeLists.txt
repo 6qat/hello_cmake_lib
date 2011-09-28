@@ -7,6 +7,6 @@ SET(hello_cmake_SOURCES mylib.cpp)
 INCLUDE( ${QT_USE_FILE} )
 ADD_DEFINITIONS( ${QT_DEFINITIONS} )
 
-ADD_LIBRARY( hello_cmake SHARED ${hello_cmake_SOURCES} )
-TARGET_LINK_LIBRARIES( hello_cmake ${QT_LIBRARIES} )
+ADD_LIBRARY( mylib SHARED ${hello_cmake_SOURCES} )
+TARGET_LINK_LIBRARIES( mylib ${QT_LIBRARIES} )
 
